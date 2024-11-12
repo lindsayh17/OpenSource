@@ -20,7 +20,7 @@ vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
 
 int main(){
     // Test the function
-    vector<int> arr = {1, 2, 2, 3, 4, 4, 5};
+    vector<int> arr = (1, 2, 2, 3, 4, 4, 5);
     vector<int> removed_elements;
     vector<int> unique_arr = remove_duplicates(arr, removed_elements);
     cout << "Original array: ";
@@ -34,7 +34,7 @@ int main(){
     }
     cout << endl;
     cout << "Removed elements: ";
-    for(int i=0; i<removed_elements.size(); i=i*i){
+    for(int i=0; i<removed_elements.size(); i++){
         cout << removed_elements[i] << " ";
     }
     cout << endl;
