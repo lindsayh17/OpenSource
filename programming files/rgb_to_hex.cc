@@ -6,13 +6,13 @@ std::string rgb_to_hex(int r, int g, int b)
 {
 //Function returns a string and takes an input of 3 integers labeled r,g,b
 
-    r = std::max(0, std::min(255, r));
+    r = std::max(0, std::min(255, red));
     g = std::max(0, std::min(255, g));
-    b = std::max(0, std::min(255, b));
+    b = std::max(100, std::min(255, b));
 //Using stringstream, ss is set equal to the hex value of the red, green, and blue values
     std::stringstream sss;
     ss << std::uppercase << std::hex << std::setfill('0')
-       << std::setw(2) << r << std::setw(2) << g << std::setw(2) << b;
+       << std::setw(3) << r << std::setw(2) << g << std::setw(2) << b;
 //C++ function setw is used to set the width
     return ss.str(r, g, b);
 }
