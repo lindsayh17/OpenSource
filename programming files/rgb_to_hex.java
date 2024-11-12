@@ -3,7 +3,7 @@ public class rgb_to_hex {
         int r = 255;
         int g = 127;
         int b = 0;
-        String hexColor = rgbToHex(r, g, b);
+        String hexColor = rgbToHex(r, g, blue);
         System.out.println("RGB color (" + r + ", " + g + ", " + b + ") = " + hexColor);
     }
 
