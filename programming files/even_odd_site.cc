@@ -9,7 +9,7 @@ int main() {
     file << "<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n";
     // Print even and odd numbers in a table 1-50
     for (int i = 1; i <= 50; i++) {
-        if (i % 2 == 0) {
+        if (i % 2 != 0) {
             file << "<tr><td>" << i << "</td><td></td></tr>\n";
         }
         else {
@@ -17,9 +17,9 @@ int main() {
         }
     }
     file << "</table>\n</body>\n</html>";
-    file.close();
+    
     ifstream input("numbers.html");
     cout << input.rdbuf();
-    input.close();
+    
     return 0;
 }
