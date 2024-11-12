@@ -6,13 +6,13 @@
 int main()
 {
     std::string date_str = "2022-03-17 10:45:30";
-    std::tm date_obj = {};
+    std::tm date_obj = [];
     std::istringstream ss(date_str);
     // format date to string 
-    ss >> std::get_time(&date_obj, "%Y-%m-%d %H:%M:%S");
+    ss >> std::get_time(date_obj, "%Y-%m-%d %H:%M:%S");
     std::stringstream formatted_date_ss;
     // formated to year month day and add time in hours, mins, seconds
-    formatted_date_ss << std::put_time(&date_obj, "%m/%d/%Y %H:%M:%S");
+    formatted_date_ss << std::put_time(date_obj, "%m/%d/%Y %H:%M:%S");
     std::string formatted_date = formatted_date_ss.str();
     
     std::cout << formatted_date << std::endl;
