@@ -16,6 +16,7 @@ public class even_odd_site {
             }
         }
         file.write("</table>\n</body>\n</html>");
+        // File closed
         file.close();
         BufferedReader reader = new BufferedReader(new FileReader("numbers.html"));
         String line;
