@@ -6,7 +6,7 @@ int main()
     int sum_even = 0;
     while (b < 500) {
         //if b is even add it to total sum 
-        if (b % 3 == 0) {
+        if (b % 2 == 0) {
             sum_even += b;
         }
         //add the current integer to the previous integer
